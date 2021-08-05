@@ -1,0 +1,331 @@
+[
+  {
+    "id": "men_1",
+    "category": "men",
+    "filter": "jacket",
+    "name": "Tweed Vest Brown",
+    "price": 99.0
+  },
+  {
+    "id": "men_2",
+    "category": "men",
+    "filter": "jacket",
+    "name": "Tweed Vest Green",
+    "price": 99.0
+  },
+  {
+    "id": "men_3",
+    "category": "men",
+    "filter": "top",
+    "name": "Shirt",
+    "price": 22.0
+  },
+  {
+    "id": "men_4",
+    "category": "men",
+    "filter": "top",
+    "name": "Shirt",
+    "price": 19.75
+  },
+  {
+    "id": "men_5",
+    "category": "men",
+    "filter": "bottom",
+    "name": "Shorts",
+    "price": 39.0
+  },
+  {
+    "id": "men_6",
+    "category": "men",
+    "filter": "top",
+    "name": "Shirt",
+    "price": 19.99
+  },
+  {
+    "id": "men_7",
+    "category": "men",
+    "filter": "jacket",
+    "name": "Black Jacket",
+    "price": 159.0
+  },
+  {
+    "id": "men_8",
+    "category": "men",
+    "filter": "top",
+    "name": "White Collar Shirt",
+    "price": 59.0
+  },
+  {
+    "id": "men_9",
+    "category": "men",
+    "filter": "bottom",
+    "name": "Jeans",
+    "price": 79.0
+  },
+  {
+    "id": "men_10",
+    "category": "men",
+    "filter": "top",
+    "name": "Blue Shirt",
+    "price": 19.0
+  },
+  {
+    "id": "men_11",
+    "category": "men",
+    "filter": "bottom",
+    "name": "Work pants",
+    "price": 69.0
+  },
+  {
+    "id": "women_1",
+    "category": "women",
+    "filter": "top",
+    "name": "Blue Jacket",
+    "price": 69.99
+  },
+  {
+    "id": "women_2",
+    "category": "women",
+    "filter": "top",
+    "name": "Sweater",
+    "price": 49.7
+  },
+  {
+    "id": "women_3",
+    "category": "women",
+    "filter": "top",
+    "name": "Hoodie",
+    "price": 56.0
+  },
+  {
+    "id": "women_4",
+    "category": "women",
+    "filter": "top",
+    "name": "Red Jacket",
+    "price": 99.0
+  },
+  {
+    "id": "women_5",
+    "category": "women",
+    "filter": "bottom",
+    "name": "Denim Jeans",
+    "price": 79.0
+  },
+  {
+    "id": "women_6",
+    "category": "women",
+    "filter": "top",
+    "name": "dress",
+    "price": 89.99
+  },
+  {
+    "id": "women_7",
+    "category": "women",
+    "filter": "top",
+    "name": "dress",
+    "price": 59.5
+  },
+  {
+    "id": "women_8",
+    "category": "women",
+    "filter": "bottom",
+    "name": "Grey tight pants",
+    "price": 69.0
+  },
+  {
+    "id": "women_9",
+    "category": "women",
+    "filter": "top",
+    "name": "Tank top",
+    "price": 19.0
+  },
+  {
+    "id": "women_10",
+    "category": "women",
+    "filter": "",
+    "name": "Dress",
+    "price": 119.0
+  },
+  {
+    "id": "women_11",
+    "category": "women",
+    "filter": "top",
+    "name": "Sweater",
+    "price": 89.0
+  },
+  {
+    "id": "women_12",
+    "category": "women",
+    "filter": "bottom",
+    "name": "Long Skirts",
+    "price": 59.0
+  },
+  {
+    "id": "women_13",
+    "category": "women",
+    "filter": "top",
+    "name": "Tank Top",
+    "price": 29.0
+  },
+  {
+    "id": "women_14",
+    "category": "women",
+    "filter": "bottom",
+    "name": "Denim Skirts",
+    "price": 49.0
+  },
+  {
+    "id": "women_15",
+    "category": "women",
+    "filter": "bottom",
+    "name": "Tight denim pants",
+    "price": 49.0
+  },
+  {
+    "id": "women_16",
+    "category": "women",
+    "filter": "bottom",
+    "name": "Bootcut pants",
+    "price": 79.0
+  },
+  {
+    "id": "kids_1",
+    "category": "kids",
+    "filter": "top",
+    "name": "Shirt",
+    "price": 19.99
+  },
+  {
+    "id": "kids_2",
+    "category": "kids",
+    "filter": "",
+    "name": "Yellow onesie",
+    "price": 20.0
+  },
+  {
+    "id": "kids_3",
+    "category": "kids",
+    "filter": "top",
+    "name": "Sweater",
+    "price": 20.0
+  },
+  {
+    "id": "kids_4",
+    "category": "kids",
+    "filter": "bottom",
+    "name": "Pants",
+    "price": 10.0
+  },
+  {
+    "id": "kids_5",
+    "category": "kids",
+    "filter": "top",
+    "name": "Shirts",
+    "price": 10.0
+  },
+  {
+    "id": "kids_6",
+    "category": "kids",
+    "filter": "bottom",
+    "name": "Pants",
+    "price": 25.0
+  },
+  {
+    "id": "kids_7",
+    "category": "kids",
+    "filter": "jacket",
+    "name": "Jackets",
+    "price": 45.0
+  },
+  {
+    "id": "kids_8",
+    "category": "kids",
+    "filter": "top",
+    "name": "Shirts",
+    "price": 25.0
+  },
+  {
+    "id": "accessories_1",
+    "category": "accessories",
+    "filter": "accessories",
+    "name": "Women Sunglasses",
+    "price": 125.0
+  },
+  {
+    "id": "accessories_2",
+    "category": "accessories",
+    "filter": "accessories",
+    "name": "Women Pouch",
+    "price": 75.0
+  },
+  {
+    "id": "accessories_3",
+    "category": "accessories",
+    "filter": "accessories",
+    "name": "Leather Gloves",
+    "price": 95.0
+  },
+  {
+    "id": "accessories_4",
+    "category": "accessories",
+    "filter": "accessories",
+    "name": "Gloves",
+    "price": 25.0
+  },
+  {
+    "id": "accessories_5",
+    "category": "accessories",
+    "filter": "accessories",
+    "name": "Bonnet",
+    "price": 35.0
+  },
+  {
+    "id": "accessories_6",
+    "category": "accessories",
+    "filter": "accessories",
+    "name": "Scarf",
+    "price": 35.0
+  },
+  {
+    "id": "accessories_7",
+    "category": "accessories",
+    "filter": "accessories",
+    "name": "Men Watch",
+    "price": 135.0
+  },
+  {
+    "id": "accessories_8",
+    "category": "accessories",
+    "filter": "accessories",
+    "name": "Men Leather Bag",
+    "price": 145.0
+  },
+  {
+    "id": "accessories_9",
+    "category": "accessories",
+    "filter": "accessories",
+    "name": "Men Leather Belt",
+    "price": 45.0
+  },
+  {
+    "id": "accessories_10",
+    "category": "accessories",
+    "filter": "accessories",
+    "name": "Men Sun Glasses",
+    "price": 145.0
+  },
+  {
+    "id": "accessories_11",
+    "category": "accessories",
+    "filter": "accessories",
+    "name": "Tie",
+    "price": 45.0
+  },
+  {
+    "id": "accessories_12",
+    "category": "accessories",
+    "filter": "accessories",
+    "name": "Men Leather Bag",
+    "price": 115.0
+  }
+]

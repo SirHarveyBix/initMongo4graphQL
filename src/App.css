@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+body {
+  margin-top: 71px;
+  height: calc(100vh - 500px);
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.font {
+  font-family: "Bangers", cursive;
+}
+tbody {
+  display: block;
+  height: 400px;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+thead,
+tbody tr {
+  display: table;
+  width: 100%;
+}
+tbody tr {
+  padding: 20px 0;
+}
+thead {
+  width: calc(
+    100% - 1em
+  ); /* scrollbar is average 1em/16px width, remove it from thead width */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg-orange {
+  background-color: #f39c12 !important;
+}
+.btn-orange {
+  color: #fff;
+  background-color: #f39c12;
+  border-color: #f39c12;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn-outline-orange {
+  color: #f39c12;
+  border-color: #f39c12;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-orange:hover,
+.btn-outline-orange:hover {
+  color: #fff;
+  background-color: #f39c12;
+  border-color: #f39c12;
 }
