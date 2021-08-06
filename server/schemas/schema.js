@@ -14,6 +14,7 @@ const ProductType = new GraphQLObjectType({
     id: { type: GraphQLString },
     name: { type: GraphQLString },
     category: { type: GraphQLString },
+    filter: { type: GraphQLString },
     price: { type: GraphQLFloat },
   }),
 });
