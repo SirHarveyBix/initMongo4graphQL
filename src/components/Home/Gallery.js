@@ -9,9 +9,9 @@ const styles = {
   },
 };
 
-function Gallery() {
+function Gallery({ category }) {
   const { loading, error, data } = useQuery(GET_PRODUCTS, {
-    variables: { category: 'men' },
+    variables: { category: category },
   });
 
   if (loading) return <div>loading ...</div>;

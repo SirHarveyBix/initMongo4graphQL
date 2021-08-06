@@ -1,22 +1,25 @@
-import React from "react";
-
+import React from 'react';
+import { Context } from '../../context';
 const Filters = {
   Category: function ({ name }) {
-    const handleOnChange = (e) => {};
+    const { updateCategory, category } = React.useContext(Context);
+    const handleOnChange = (event) => {
+      updateCategory(event.target.value);
+    };
     return (
-      <div className="mt-2 mb-2 pl-2">
-        <div className="custom-control custom-checkbox">
+      <div className='mt-2 mb-2 pl-2'>
+        <div className='custom-control custom-checkbox'>
           <input
-            type="radio"
+            type='radio'
             onChange={handleOnChange}
-            name="category"
+            name='category'
             value={name}
-            className="custom-control-input"
+            className='custom-control-input'
             id={name}
-            checked=""
+            checked={name === category}
           />
           &nbsp;
-          <label className="custom-control-label" for={name}>
+          <label className='custom-control-label' for={name}>
             {name}
           </label>
         </div>
@@ -25,17 +28,17 @@ const Filters = {
   },
   Filter: function ({ name }) {
     return (
-      <div className="mt-2 mb-2 pl-2">
-        <div className="custom-control custom-checkbox">
+      <div className='mt-2 mb-2 pl-2'>
+        <div className='custom-control custom-checkbox'>
           <input
             name={name}
             onChange={() => {}}
-            type="checkbox"
-            className="custom-control-input"
+            type='checkbox'
+            className='custom-control-input'
             id={name}
           />
           &nbsp;
-          <label className="custom-control-label" for={name}>
+          <label className='custom-control-label' for={name}>
             {name}
           </label>
         </div>
