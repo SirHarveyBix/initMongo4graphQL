@@ -7,6 +7,7 @@ const Product = require('./models/product');
 const schema = require('./schemas/schema');
 
 const { graphqlHTTP } = require('express-graphql');
+app.use(cors());
 
 app.get('/products', async (request, response) => {
   const products = await Product.find({});
@@ -25,8 +26,6 @@ app.get('/products/:category', async (request, response) => {
     response.status(500).send(error);
   }
 });
-app.use(cors());
-
 app.use(
   '/graphql',
   graphqlHTTP({
@@ -34,7 +33,6 @@ app.use(
     graphiql: true,
   })
 );
-
 app.listen(PORT, () => {
   console.log(`Server up & run on http://localhost:${PORT} 🎉`);
   mongoDBClient.init();

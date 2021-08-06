@@ -1,11 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-// GUI
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
+
 const client = new ApolloClient({
-  uri: 'htpp://localhost:2021/graphql',
+  uri: 'http://localhost:2021/graphql',
   cache: new InMemoryCache(),
+
+  onError: ({ networkError, graphQLErrors }) => {
+    console.log('graphQLErrors', graphQLErrors);
+    console.log('networkError', networkError);
+  },
 });
 
 ReactDOM.render(
