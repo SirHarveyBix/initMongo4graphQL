@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 body {
   margin-top: 71px;
   height: calc(100vh - 500px);
@@ -6,7 +6,7 @@ body {
 }
 
 .font {
-  font-family: "Bangers", cursive;
+  font-family: 'Bangers', cursive;
 }
 tbody {
   display: block;
@@ -46,4 +46,8 @@ thead {
   color: #fff;
   background-color: #f39c12;
   border-color: #f39c12;
+}
+.navbar-nav .nav-link {
+  background: transparent;
+  border-color: transparent;
 }

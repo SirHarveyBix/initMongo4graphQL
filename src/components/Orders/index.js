@@ -5,7 +5,9 @@ function Orders() {
   return (
     <Table heading='My Orders' subheading='orders in your account'>
       <tbody>
-        <p>No Orders yet</p>
+        <tr>
+          <td>No Orders yet</td>
+        </tr>
       </tbody>
       <div className='row mt-4 d-flex'>
         <div className='col-sm-4 mb-3 mb-m-1 text-md-left'>

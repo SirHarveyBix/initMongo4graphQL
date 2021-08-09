@@ -17,6 +17,12 @@ function reducer(state = { items: [] }, action) {
           return item;
         }),
       };
+    case 'REMOVE_FROM_CART':
+      return {
+        items: state.items.filter(
+          (item) => item.id !== action.payload.id && item
+        ),
+      };
     default:
       return state;
   }
@@ -28,12 +34,21 @@ export function addToCart(item) {
     payload: { item },
   };
 }
+
 export function updateCart(id, quantity) {
   return {
     type: 'UPDATE_CART',
     payload: { id, quantity },
   };
 }
+
+export function removeFromCart(id) {
+  return {
+    type: 'REMOVE_FROM_CART',
+    payload: { id },
+  };
+}
+
 export const store = createStore(
   reducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()

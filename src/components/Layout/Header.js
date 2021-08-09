@@ -1,9 +1,13 @@
-/* eslint-disable no-unused-vars */
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { selectCartTotal } from '../../lib/redux/selectors';
 
 function CartDropdown({ show, handleOnClick }) {
-  const items = [];
+  const items = useSelector((state) => state.items);
+
+  const total = useSelector(selectCartTotal);
+
   return (
     <div
       onClick={handleOnClick}
@@ -12,8 +16,8 @@ function CartDropdown({ show, handleOnClick }) {
       style={{ minWidth: '300px' }}
     >
       <div className='d-flex justify-content-between'>
-        <span>0</span>
-        <span className='emphasis'>€0.00</span>
+        <span>{items.length}</span>
+        <span className='emphasis'>{total.toFixed(2)}</span>
       </div>
       <div className='dropdown-divider'></div>
       <ul
@@ -22,10 +26,10 @@ function CartDropdown({ show, handleOnClick }) {
       >
         {items.map((item) => {
           return (
-            <li className='row mt-3'>
+            <li key={item.id} className='row mt-3'>
               <div className='col-md-4 col-2'>
                 <img
-                  src={`images/men_1.png`}
+                  src={`images/${item.id}.png`}
                   alt=''
                   className='img-fluid rounded mb-2 shadow'
                 />
@@ -35,15 +39,17 @@ function CartDropdown({ show, handleOnClick }) {
                   <Link
                     to={{
                       pathname: '/product',
-                      props: { product: 'men_1' },
+                      props: { product: item },
                     }}
                   >
-                    Product name
+                    {item.name}
                   </Link>
                 </h6>
-                <span className='text-muted'>quantity: 1</span>
+                <span className='text-muted'>{item.quantity}</span>
                 <br />
-                <span className='emphasis'>$0.00</span>
+                <span className='emphasis'>
+                  {(item.quantity * item.price).toFixed(2)}€
+                </span>
               </div>
             </li>
           );
@@ -60,7 +66,7 @@ function CartDropdown({ show, handleOnClick }) {
   );
 }
 function Header() {
-  const [currentLink, setCurrent] = React.useState('');
+  const [currentLink] = React.useState('');
   const [show, setShow] = React.useState(false);
   const links = ['cart', 'orders'];
   const handleOnClick = () => setShow(!show);
@@ -105,10 +111,12 @@ function Header() {
               })}
 
               <li className='nav-item dropdown' onClick={() => setShow(!show)}>
-                <a className={`nav-link dropdown-toggle ${show && 'show'}`}>
-                  <i className='fas fa-shopping-cart'></i>{' '}
+                <button
+                  className={`nav-link dropdown-toggle ${show && 'show'}`}
+                >
+                  <i className='fas fa-shopping-cart'></i>
                   <span className='badge bg-orange'></span>
-                </a>
+                </button>
                 <CartDropdown show={show} handleOnClick={handleOnClick} />
               </li>
             </ul>

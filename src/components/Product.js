@@ -9,9 +9,12 @@ function Product({
   },
 }) {
   const dispatch = useDispatch();
+
   const [details, setDetails] = useState({ quantity: 1, size: 'small' });
+
   const handleDetails = (event) =>
     setDetails({ ...details, [event.target.name]: event.target.value });
+
   const addCart = () => {
     const item = {
       id: product.id,
