@@ -26,7 +26,7 @@ function Card(product) {
               {name}
             </Link>
           </h4>
-          <h5 className='card-price small text-warning'>{price}</h5>
+          <h5 className='card-price small text-warning'>{price} €</h5>
         </div>
       </div>
     </div>

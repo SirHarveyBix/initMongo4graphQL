@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { selectCartTotal } from '../../lib/redux/selectors';
-
+import GoogleBtn from './GoogleBtn';
+import { GoogleLogin } from 'react-google-login';
 function CartDropdown({ show, handleOnClick }) {
   const items = useSelector((state) => state.items);
 
@@ -120,6 +121,7 @@ function Header() {
                 <CartDropdown show={show} handleOnClick={handleOnClick} />
               </li>
             </ul>
+            <GoogleBtn />
           </div>
         </div>
       </nav>
