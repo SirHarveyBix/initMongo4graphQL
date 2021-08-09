@@ -23,7 +23,6 @@ const RootQuery = new GraphQLObjectType({
   name: 'RootQueryType',
   fields: {
     hello: {
-      //test
       type: GraphQLString,
       resolve() {
         return 'GraphQL Launched 🚀';
@@ -44,7 +43,6 @@ const RootQuery = new GraphQLObjectType({
     },
   },
 });
-// a creuser : Category Variable
 const schema = new GraphQLSchema({
   query: RootQuery,
 });

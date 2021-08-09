@@ -11,7 +11,7 @@ const MongoDBClient = {
         useUnifiedTopology: true,
       });
       client.then(() => {
-        console.log('mongo connected');
+        console.log(' Connected to 🌱');
       });
     } catch (error) {
       throw Error(error);

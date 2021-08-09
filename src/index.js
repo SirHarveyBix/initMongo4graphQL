@@ -6,7 +6,6 @@ import FiltersProvider from './context';
 const client = new ApolloClient({
   uri: 'http://localhost:2021/graphql',
   cache: new InMemoryCache(),
-
   // onError: ({ networkError, graphQLErrors }) => {
   //   console.log('graphQLErrors', graphQLErrors);
   //   console.log('networkError', networkError);

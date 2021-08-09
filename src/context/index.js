@@ -9,14 +9,33 @@ const FiltersProvider = ({ children }) => {
   const updateCategory = (value) => {
     setCategory(value.toLowerCase());
   };
+  const [isChecked, setIsChecked] = useState({
+    Top: false,
+    Bottom: false,
+    Jacket: false,
+  });
+  const updateFilters = (event) =>
+    // or : setFiltersChecked((prevState) =>
+    // ({ ...prevState,[e.target.name]: e.target.checked, }));
+    setIsChecked({
+      ...isChecked,
+      [event.target.name]: event.target.checked,
+    });
+  const filtersKeys = () => {
+    return Object.entries(isChecked)
+      .map(([key, value]) => value && key)
+      .filter((obj) => !!obj);
+  };
   const value = useMemo(() => {
     return {
       categories,
-      filters,
-      updateCategory,
       category,
+      filters,
+      isChecked: filtersKeys(),
+      updateCategory,
+      updateFilters,
     };
-  }, [category]);
+  }, [category, isChecked]);
   return <Context.Provider value={value}>{children}</Context.Provider>;
 };
 
