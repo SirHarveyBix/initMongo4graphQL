@@ -15,6 +15,7 @@ function Gallery({ category }) {
   const { loading, error, data } = useQuery(GET_PRODUCTS, {
     variables: { category: category },
   });
+
   let array = [];
   const withFilters = () => {
     if (!isChecked.length) return data?.products;
@@ -28,10 +29,12 @@ function Gallery({ category }) {
     });
     return array;
   };
+  const products = withFilters();
+
   if (loading) return <div>loading ...</div>;
   if (error) return <div>Error</div>;
   if (!data) return <div>Nothing to share</div>;
-  const products = withFilters();
+
   return (
     <div className='col-md-8 order-md  -2 col-lg-9'>
       <div className='container-fluid' style={styles.gallery}>

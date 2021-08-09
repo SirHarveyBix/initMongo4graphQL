@@ -76,7 +76,7 @@ function Header() {
             CLICK & COLLECT
           </Link>
           <button
-            class='navbar-toggler'
+            className='navbar-toggler'
             type='button'
             data-bs-toggle='collapse'
             data-bs-target='#navbarNav3'

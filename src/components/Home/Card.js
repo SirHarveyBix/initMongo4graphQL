@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Card({ id, name, price }) {
+function Card(product) {
+  const { id, name, price } = product;
   return (
     <div className='col-6 col-md-6 col-lg-4 mb-3'>
       <div className='card h-100 border-0'>
@@ -17,7 +18,7 @@ function Card({ id, name, price }) {
             <Link
               to={{
                 pathname: '/product',
-                id,
+                props: { product },
               }}
               className=' font-weight-bold text-dark text-uppercase small'
             >
