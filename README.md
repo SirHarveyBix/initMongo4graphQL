@@ -1,6 +1,7 @@
+##origine de l'app, et info susr le projet :
 https://www.udemy.com/course/fullstack-react-17-graphql-apollo-google-sign-paypal/
 
-> > Développer une boutique en ligne avec Mongo, Express, React 17, Node (MERN), GraphQL, Apollo Client, Paypal, Google Auth
+> Développer une boutique en ligne avec Mongo, Express, React 17, Node (MERN), GraphQL, Apollo Client, Paypal, Google Auth
 
 # Getting Started with Create React App
 
